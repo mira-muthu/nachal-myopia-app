@@ -77,7 +77,7 @@ struct ContentView: View {
             startLoop()
         }
         .onDisappear {
-            stopCycle()  // ✅ Automatically stop when leaving the
+            stopCycle()  // ✅ Automatically stop when leaving
         }
     }
 
