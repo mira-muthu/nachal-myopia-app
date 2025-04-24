@@ -18,12 +18,22 @@ struct MainMenuView: View {
                         .cornerRadius(12)
                 }
 
-                NavigationLink(destination: EyeExerciseView()) {
+                NavigationLink(destination: EyeExerciseInfoView()) {
                     Text("🧘 Eye Break Exercises")
                         .font(.headline)
                         .frame(maxWidth: .infinity)
                         .padding()
                         .background(Color.green)
+                        .foregroundColor(.white)
+                        .cornerRadius(12)
+                }
+
+                NavigationLink(destination: AppLockView()) {
+                    Text("📵 App Lock Mode")
+                        .font(.headline)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.purple)
                         .foregroundColor(.white)
                         .cornerRadius(12)
                 }
@@ -33,3 +43,4 @@ struct MainMenuView: View {
         }
     }
 }
+
